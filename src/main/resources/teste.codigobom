@@ -1,5 +1,3 @@
-if (a >= b) {
+double altura = 1.75;
 
-    a = a - b;
-
-}
+double peso = 70.5;

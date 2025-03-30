@@ -20,6 +20,7 @@ STRINGGammar = [Ss]tring
 CHARGrammar = [Cc]har
 FLOATGrammar = [Ff]loat
 INTGrammar = [Ii]nt
+DOUBLEGrammar = [Dd]ouble
 
 // Estados léxicos (opcional)
 %%
@@ -28,7 +29,9 @@ INTGrammar = [Ii]nt
 {INTGrammar}      { return new Token(Token.PALAVRA_CHAVE, yytext()); }
 {FLOATGrammar}    { return new Token(Token.PALAVRA_CHAVE, yytext()); }
 {CHARGrammar}     { return new Token(Token.PALAVRA_CHAVE, yytext()); }
-{STRINGGammar}   { return new Token(Token.PALAVRA_CHAVE, yytext()); }
+{STRINGGammar}    { return new Token(Token.PALAVRA_CHAVE, yytext()); }
+{DOUBLEGrammar}   { return new Token(Token.PALAVRA_CHAVE, yytext()); }
+
 
 "if"       { return new Token(Token.IF, yytext()); }
 "else"     { return new Token(Token.ELSE, yytext()); }
