@@ -8,6 +8,11 @@ class Token {
     public static final int MENOS = 7;
     public static final int MULTIPLICACAO = 8;
     public static final int DIVISAO = 9;
+    public static final int DELIMITADOR = 10;
+    public static final int FLOAT = 11;
+    public static final int STRING = 12;
+    public static final int IGUAL = 13;
+    public static final int PALAVRA_CHAVE = 14;
 
     public final int tipo;
     public final String texto;
