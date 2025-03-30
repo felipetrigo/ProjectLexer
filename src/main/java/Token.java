@@ -14,6 +14,14 @@ class Token {
     public static final int IGUAL = 13;
     public static final int PALAVRA_CHAVE = 14;
     public static final int ASPAS_DUPLAS = 15;
+    public static final int E_PARENTESES = 16;
+    public static final int R_PARENTESES = 17;
+    public static final int MINOR = 18;
+    public static final int MINOR_EQUALS = 19;
+    public static final int MAJOR = 20;
+    public static final int MAJOR_EQUALS = 21;
+    public static final int R_KEYS = 22;
+    public static final int E_KEYS = 23;
     public final int tipo;
     public final String texto;
 

@@ -1,1 +1,5 @@
-String nome = "Carlos";
+if (a >= b) {
+
+    a = a - b;
+
+}
