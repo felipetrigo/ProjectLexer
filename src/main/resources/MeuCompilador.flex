@@ -37,6 +37,7 @@ INTGrammar = [Ii]nt
 {INTEIRO}  { return new Token(Token.NUMERO, yytext()); }
 {FLOAT}    { return new Token(Token.FLOAT, yytext()); }
 '[^']'     { return new Token(Token.STRING, yytext()); }
+\"*\"    { return new Token(Token.ASPAS_DUPLAS, yytext()); }
 "="        { return new Token(Token.IGUAL, yytext()); }
 "+"        { return new Token(Token.MAIS, yytext()); }
 "-"        { return new Token(Token.MENOS, yytext()); }
