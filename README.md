@@ -24,7 +24,7 @@ e pronto após a instalação você esta pronto para desenvolver compiladores.
 o compilador gerado foi através do arquivo ```src/main/resources/MeuCompilador.flex ```
 usando o comando abaixo na pasta do arquivo
 ```bash
-jflex MeuCompilador.flex
+jflex lexer.flex
 ```
 que por sua vez gerou o arquivo ```Lexer.java``` que usei na classe principal para 
 identificar os tokens no arquivo teste.codigobom.
