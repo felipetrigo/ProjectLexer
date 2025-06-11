@@ -14,10 +14,10 @@ public class MainClass {
             System.out.println("Tokens encontrados:");
             do {
                 token = lexer.nextToken();
-                //System.out.println(String.format("Tipo: %s, Valor: %s", token.getType(), token.getValue()));
+                System.out.println(String.format("Tipo: %s, Valor: %s", token.getType(), token.getValue()));
                 treeBuilder.processToken(token);
             } while (!token.getType().equals("EOF"));
-
+            System.out.println("\n\n\n\n");
             System.out.println("\nÁrvore Léxica:");
             treeBuilder.getTree().printTree();
 
