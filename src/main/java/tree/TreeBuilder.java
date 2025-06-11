@@ -88,6 +88,8 @@ public class TreeBuilder {
                     nodeStack.pop();
                 }
                 break;
+            default:
+                currentNode.addChild(new TreeNode("error",token.getValue()));
         }
     }
 
